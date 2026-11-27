@@ -1,0 +1,334 @@
+/* Temel sıfırlama */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #efe6d5;
+    color: #1f2937;
+    line-height: 1.5;
+    overflow-x: hidden;
+}
+
+.sayfa-kapsayici {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 16px 24px;
+    background-color: #f5eee0;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* Açılışta gizli duracak bölümler */
+.gizli {
+    display: none !important;
+}
+
+/* Bölüm ve başlık aralıkları */
+.bolum {
+    margin-bottom: 24px;
+}
+
+.bolum-basligi {
+    font-size: 18px;
+    margin-bottom: 12px;
+    color: #111827;
+}
+
+.populer-bolum-basligi {
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 14px;
+    color: #0f172a;
+}
+
+/* Üst başlık ve arama alanı */
+.ust-baslik {
+    margin-bottom: 18px;
+    text-align: center;
+}
+
+.ust-baslik h1 {
+    display: inline-block;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+    color: #0f172a;
+    padding-bottom: 6px;
+    border-bottom: 3px solid #d96b43;
+}
+
+.arama-alani {
+    margin-bottom: 18px;
+}
+
+.arama-kutusu {
+    width: 100%;
+    padding: 11px 14px;
+    border: 1px solid #d6cbb8;
+    border-radius: 10px;
+    font-size: 15px;
+    color: #0f172a;
+    background-color: #fffdf9;
+}
+
+/* Karşılama alanı */
+.karsilama-kutusu {
+    background-color: #fffdf9;
+    border: 1px solid #d6cbb8;
+    border-radius: 12px;
+    padding: 16px;
+    text-align: center;
+}
+/* Bodrum tanıtım alanı */
+.bodrum-tanitim-kutusu {
+    background-color: #fffdf9;
+    border: 1px solid #d6cbb8;
+    border-left: 4px solid #d96b43;
+    border-radius: 12px;
+    padding: 18px 20px;
+    text-align: center;
+}
+
+.bodrum-tanitim-basligi {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 21px;
+    color: #0f172a;
+    margin-bottom: 8px;
+}
+
+.bodrum-tanitim-metni {
+    max-width: 780px;
+    margin: 0 auto;
+    font-size: 14.5px;
+    color: #3f3b36;
+    line-height: 1.65;
+}
+
+.alt-baslik {
+    font-size: 17px;
+    font-weight: bold;
+    color: #0f172a;
+    margin-bottom: 4px;
+    text-align: center;
+}
+
+.karsilama-notu {
+    display: block;
+    font-size: 13px;
+    color: #475569;
+    text-align: center;
+}
+
+/* Mekanlar ve Bütçe ana butonları */
+.filtre-ust-bar {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 14px;
+}
+
+.ana-buton {
+    flex: 1;
+    padding: 13px;
+    border: none;
+    border-radius: 10px;
+    background-color: #d96b43;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.ana-buton:hover {
+    background-color: #c25630;
+}
+
+/* Açılan kategori kartları */
+.kategori-listesi {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-bottom: 14px;
+}
+
+.kategori-karti {
+    padding: 11px 14px;
+    border: 1px solid #d6cbb8;
+    border-radius: 10px;
+    background-color: #fffdf9;
+    color: #1f2937;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.kategori-karti:hover {
+    border-color: #d96b43;
+    background-color: #fdf2ed;
+}
+
+/* Açılan bütçe butonları ve alt notu */
+.butce-listesi {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.butce-butonu {
+    padding: 10px 12px;
+    border: 1px solid #d6cbb8;
+    border-radius: 8px;
+    background-color: #fffdf9;
+    color: #0f172a;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.butce-butonu:hover {
+    border-color: #d96b43;
+    background-color: #fdf2ed;
+}
+
+.butce-notu {
+    font-size: 13px;
+    color: #57534e;
+    margin-bottom: 14px;
+}
+
+
+.secim-ozeti {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    align-items: center;
+    padding: 11px 14px;
+    background-color: #fffdf9;
+    border: 1px solid #d6cbb8;
+    border-radius: 10px;
+    font-size: 14px;
+    margin-bottom: 14px;
+}
+
+.secim-metni {
+    color: #dc2626;
+}
+
+/* Yeni sayfaya geçiş butonu */
+.listele-buton {
+    display: block;
+    width: 100%;
+    padding: 13px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #d96b43;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: background-color 0.2s ease;
+}
+
+.listele-buton:hover {
+    background-color: #c25630;
+}
+
+/* 5 Popüler mekan kartı  */
+.populer-kart-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    margin-bottom: 16px;
+}
+
+.populer-kart {
+    height: 100%;
+    border: 1px solid #d6cbb8;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: #fffdf9;
+    box-shadow: 0 2px 8px rgba(15, 23, 42, 0.06);
+}
+
+.populer-kart:hover {
+    border-color: #94a3b8;
+}
+
+.populer-gorsel {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.populer-baslik {
+    font-size: 17px;
+    color: #0f172a;
+    padding: 12px 14px 4px;
+}
+
+.populer-ozet {
+    font-size: 14px;
+    color: #475569;
+    padding: 0 14px 14px;
+}
+
+
+@media (min-width: 768px) {
+    .sayfa-kapsayici {
+        margin: 0;
+        padding: 24px 32px;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    .kategori-listesi {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .butce-listesi {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .listele-buton {
+        max-width: 320px;
+    }
+}
+
+/* Geniş Ekran Bilgisayarlar  */
+@media (min-width: 1024px) {
+    .ust-baslik h1 {
+        font-size: 32px;
+    }
+
+    .populer-bolum-basligi {
+        font-size: 26px;
+    }
+
+    .populer-kart-link {
+        margin-bottom: 0;
+    }
+
+    .bolum:has(.populer-kart) {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 18px;
+        align-items: stretch;
+    }
+
+    .bolum:has(.populer-kart) > .bolum-basligi {
+        grid-column: 1 / -1;
+        margin-bottom: 0;
+    }
+
+    .populer-gorsel {
+        height: 210px;
+    }
+}

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gezi ve Bütçe Planlayıcı</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="sayfa-kapsayici">
+        <header class="ust-baslik">
+            <h1>Gezi &amp; Bütçe Planlarınızı Yapın</h1>
+        </header>
+
+        <div class="arama-alani">
+            <input type="text" class="arama-kutusu" placeholder="Ara...">
+        </div>
+
+        <!-- Karşılama alanı -->
+        <section class="bolum karsilama-kutusu">
+            <p class="alt-baslik">Bodrum'da zevkine ve bütçene göre mekan keşfet</p>
+            <span class="karsilama-notu">Önce Mekanlar ve Bütçe adımlarını seç, ardından listeye geç.</span>
+        </section>
+
+        <!-- Mekanlar ve Bütçe kontrol alanı -->
+        <section class="bolum">
+            <div class="filtre-ust-bar">
+                <button type="button" class="ana-buton mekanlar-buton">Mekanlar</button>
+                <button type="button" class="ana-buton butce-buton">Bütçe</button>
+            </div>
+
+            <!-- Mekanlar butonuna basılınca açılan kategoriler -->
+            <div class="kategori-listesi gizli">
+                <button type="button" class="kategori-karti">
+                    <span>Restoran</span>
+                </button>
+                <button type="button" class="kategori-karti">
+                    <span>Plaj</span>
+                </button>
+                <button type="button" class="kategori-karti">
+                    <span>Müze</span>
+                </button>
+                <button type="button" class="kategori-karti">
+                    <span>Koy</span>
+                </button>
+                <button type="button" class="kategori-karti">
+                    <span>Tarihi Yerler</span>
+                </button>
+                <button type="button" class="kategori-karti">
+                    <span>Aktivite-Eğlence</span>
+                </button>
+            </div>
+
+            <!-- Bütçe butonuna basılınca açılan fiyat aralıkları -->
+            <div class="butce-listesi gizli">
+                <button type="button" class="butce-butonu">0-500</button>
+                <button type="button" class="butce-butonu">500-2000</button>
+                <button type="button" class="butce-butonu">2000-5000</button>
+                <button type="button" class="butce-butonu">5000-10000</button>
+                <button type="button" class="butce-butonu">10000+</button>
+            </div>
+
+            <p class="butce-notu">Seçtiğin bütçe aralığını yemek, ulaşım ve giriş ücretlerini birlikte düşünerek belirlemen planını daha gerçekçi yapar.</p>
+
+            <!-- Anlık seçim özet satırı -->
+            <div class="secim-ozeti">
+                <span>Seçim:</span>
+                <strong class="secim-metni">Henüz kategori veya bütçe seçilmedi</strong>
+            </div>
+
+            <!-- Seçim sonrası yeni sayfaya geçiş butonu/bağlantısı -->
+            <a href="mekanlar.html" class="listele-buton">Seçilen Mekanları Gör</a>
+        </section>
+
+        <!-- Popüler mekanlar -->
+        <section class="bolum">
+            <h2 class="bolum-basligi">Popüler Mekanlar</h2>
+
+            <a href="gumusluk-sahil.html" class="populer-kart-link">
+                <article class="populer-kart">
+                    <img src="bodrumgümüşlük sahil.jpg" alt="Gümüşlük sahil" class="populer-gorsel">
+                    <h3 class="populer-baslik">Gümüşlük sahil</h3>
+                    <p class="populer-ozet">Sakin atmosferi, taş kıyıları ve gün batımı manzarasıyla öne çıkan keyifli bir sahil bölgesi.</p>
+                </article>
+            </a>
+
+            <a href="bodrum-kalesi.html" class="populer-kart-link">
+                <article class="populer-kart">
+                    <img src="BodrumCastlesoutheast.jpg" alt="Bodrum Kalesi" class="populer-gorsel">
+                    <h3 class="populer-baslik">Bodrum Kalesi</h3>
+                    <p class="populer-ozet">Deniz manzarası, tarihi kuleleri ve sergi alanlarıyla Bodrum'un en bilinen simge yapılarından biri.</p>
+                </article>
+            </a>
+
+            <a href="turkbuku-koyu.html" class="populer-kart-link">
+                <article class="populer-kart">
+                    <img src="view-of-turkbuku-bay-1024x768.jpg" alt="Türkbükü Koyu" class="populer-gorsel">
+                    <h3 class="populer-baslik">Türkbükü Koyu</h3>
+                    <p class="populer-ozet">Berrak suyu, hareketli sahil hattı ve yaz akşamlarına eşlik eden canlı ortamıyla dikkat çeken koy.</p>
+                </article>
+            </a>
+
+            <a href="antik-tiyatro.html" class="populer-kart-link">
+                <article class="populer-kart">
+                    <img src="antik-tiyatro.webp" alt="Bodrum Antik Tiyatrosu" class="populer-gorsel">
+                    <h3 class="populer-baslik">Bodrum Antik Tiyatrosu</h3>
+                    <p class="populer-ozet">Yamaç üzerine kurulu taş oturma sıraları ve şehir manzarasıyla antik dönemin izlerini taşıyan durak.</p>
+                </article>
+            </a>
+
+            <a href="bitez-plaji.html" class="populer-kart-link">
+                <article class="populer-kart">
+                    <img src="bitez-plaji-mugla-2.jpg" alt="Bitez Plajı" class="populer-gorsel">
+                    <h3 class="populer-baslik">Bitez Plajı</h3>
+                    <p class="populer-ozet">Uzun sahil şeridi, sığ denizi ve gölgelik alanlarıyla rahat bir deniz günü sunan plaj.</p>
+                </article>
+            </a>
+        </section>
+        <!-- Bodrum tanıtım alanı -->
+        <section class="bolum bodrum-tanitim-kutusu">
+            <h2 class="bolum-basligi bodrum-tanitim-basligi">Bodrum'u Keşfet</h2>
+            <p class="bodrum-tanitim-metni">
+                Ege'nin berrak koyları, tarihi kalıntıları, taş sokakları ve gün batımı manzaralarıyla Bodrum; hem sakin bir deniz tatili hem de hareketli akşamlar arayanlara farklı seçenekler sunar. İster bütçe dostu bir rota oluşturmak iste ister daha özel bir plan yapmak, önce kategori ve bütçeni seçerek sana en uygun durakları kolayca listeleyebilirsin.
+            </p>
+        </section>
+    </div>
+
+    <script>
+        const mekanlarButon = document.querySelector(".mekanlar-buton");
+        const butceButon = document.querySelector(".butce-buton");
+        const kategoriListesi = document.querySelector(".kategori-listesi");
+        const butceListesi = document.querySelector(".butce-listesi");
+        const kategoriKartlari = document.querySelectorAll(".kategori-karti");
+        const butceButonlari = document.querySelectorAll(".butce-butonu");
+        const secimMetni = document.querySelector(".secim-metni");
+
+        let seciliKategori = "";
+        let seciliButce = "";
+
+        function ozetiGuncelle() {
+            if (!seciliKategori && !seciliButce) {
+                secimMetni.textContent = "Henüz kategori veya bütçe seçilmedi";
+                return;
+            }
+
+            const parcalar = [];
+            if (seciliKategori) parcalar.push("Kategori: " + seciliKategori);
+            if (seciliButce) parcalar.push("Bütçe: " + seciliButce);
+            secimMetni.textContent = parcalar.join(" • ");
+        }
+
+        mekanlarButon.addEventListener("click", () => {
+            kategoriListesi.classList.toggle("gizli");
+        });
+
+        butceButon.addEventListener("click", () => {
+            butceListesi.classList.toggle("gizli");
+        });
+
+        kategoriKartlari.forEach((kart) => {
+            kart.addEventListener("click", () => {
+                const metin = kart.querySelector("span").textContent.trim();
+                seciliKategori = seciliKategori === metin ? "" : metin;
+                ozetiGuncelle();
+            });
+        });
+
+        butceButonlari.forEach((buton) => {
+            buton.addEventListener("click", () => {
+                const metin = buton.textContent.trim();
+                seciliButce = seciliButce === metin ? "" : metin;
+                ozetiGuncelle();
+            });
+        });
+    </script>
+</body>
+</html>
